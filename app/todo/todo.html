@@ -1,0 +1,26 @@
+<div class="myApp" ng-app="myApp" ng-controller="todoCtrl">
+    <h1 class="text-center">TODO LIST</h1>
+    <div class="todo">
+        <section class="todoWrapper">
+            <form ng-submit="submitTask()">
+                <input type="text" placeholder="Type your task here..." ng-model="newTask.text"/>
+            </form>
+            <div class="tasks">
+                <div class="task" ng-repeat="task in Tasks track by $index" ng-if="Tasks.length !== 0">
+                    <h3 ng-class="{'marked': task.marked}" ng-click="markTask(task)">{{task.text | capitalize }}</h3>
+                    <div>
+                        <i class="icon" ng-click="markTask(task)" ng-class="{'far fa-circle square': !task.marked, 'fas fa-check-circle markedSquare': task.marked}"></i>
+                    </div>
+                </div>
+                <div class="lottieWrapper" ng-if="Tasks.length === 0">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_tnrzlN.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    <h2>No active tasks</h2>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-clear" ng-if="Tasks.length !== 0 && someMarked()" ng-click="clearTasks()">Delete <i class="fas fa-trash"></i></button>
+                <button class="btn btn-submit" ng-click="submitTask()">Add</button>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+/* app css stylesheet */
+body {
+  background: rgba(0, 0, 0, 0.92);
+}
+.myApp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.myApp .text-center {
+  color: white;
+  margin-top: 50px;
+}
+.myApp .todo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.myApp .todo .todoWrapper {
+  background-color: transparent;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 15px;
+  min-width: 500px;
+}
+.myApp .todo .todoWrapper .tasks {
+  padding: 10px;
+}
+.myApp .todo .todoWrapper .tasks .task {
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.todo section form {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.todo section form input {
+  width: 100%;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  color: black;
+  padding: 5px 0 5px 10px ;
+}
+.tasks .task div .icon {
+  position: relative;
+  top: 18px;
+  font-size: 20px;
+  color: #96281b;
+  cursor: pointer;
+  width: 25px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.buttons .btn {
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  color: #fff;
+}
+.buttons .btn-clear {
+  background: #96281b;
+}
+.buttons .btn-submit {
+  background: #088f18;
+}
+.todoWrapper .tasks .lottieWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.todoWrapper .tasks .lottieWrapper h2 {
+  color: #fff;
+}
+.tasks .task h3.marked {
+  color: #555555;
+  text-decoration: line-through;
+}
+.tasks .task h3 {
+  color: #fff;
+}
+.tasks .task .square {
+  color: #96281b;
+}
+.tasks .task .markedSquare {
+  color: #088f18 !important;
+}
+
