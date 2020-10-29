@@ -1,3 +1,4 @@
 <?php
-include_once('app/index.html');
+include('app/index.html');
+include('app/todo/todo.js');
 ?>
