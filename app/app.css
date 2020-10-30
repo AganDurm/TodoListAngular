@@ -24,7 +24,8 @@ body {
   border-radius: 5px;
   margin: 10px auto;
   padding: 15px;
-  min-width: 500px;
+  min-width: 300px;
+  max-width: 350px;
 }
 .myApp .todo .todoWrapper .tasks {
   padding: 10px;
