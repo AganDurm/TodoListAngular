@@ -216,3 +216,32 @@ body {
   color: #088f18 !important;
 }
 
+.left-ad {
+  display: inline;
+  position: absolute;
+  top: calc(50% - 300px);
+  left: 80px;
+}
+.right-ad {
+  display: inline;
+  position: absolute;
+  top: calc(50% - 300px);
+  right: 80px;
+}
+.mobile-ad {
+  display: none;
+}
+@media screen and (min-width: 140px) and (max-width: 780px) {
+  .left-ad {
+    display: none;
+  }
+  .right-ad {
+    display: none;
+  }
+  .mobile-ad {
+    display: inline;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 160px);
+  }
+}
