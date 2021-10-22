@@ -1,10 +1,10 @@
 /* app css stylesheet */
 body {
-  background: rgba(0, 0, 0, 0.92);
+  background: url("/assets/Virus.svg") no-repeat 100%/cover;
 }
 .myApp {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
